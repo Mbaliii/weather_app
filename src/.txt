@@ -1,0 +1,8 @@
+note
+Press Ctrl + Shift + U: This will allow you to enter Unicode characters.
+Type 00B0: This is the Unicode code for the degree symbol.
+Press Enter: The degree symbol (°) should appear.
+Type C: Now you have °C.
+
+
+import './App.css';

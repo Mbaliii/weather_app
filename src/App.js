@@ -1,11 +1,15 @@
 import './App.css';
+import React from 'react';
+import Weather_App from './weather';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <h5>Weather</h5>
+    <div>
+      <h1>Weather Forecast</h1>
+      <Weather_App/>
     </div>
-  );
-}
+  )
+};
 
-export default App;
+export default App

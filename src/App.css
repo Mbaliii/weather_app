@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,24 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+body{
+  font-family: 'Ariel', sans-serif;
+}
+
+form{ 
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+input{
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button{
+  padding: 10px;
 }
