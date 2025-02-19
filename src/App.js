@@ -1,13 +1,13 @@
 import './App.css';
 import React from 'react';
-import Weather_App from './weather';
+import WeatherApp from './weather';
 
 
 const App = () => {
   return (
     <div>
-      <h1>Weather Forecast</h1>
-      <Weather_App/>
+      <h3>Weather Forecast</h3>
+      <WeatherApp/>
     </div>
   )
 };

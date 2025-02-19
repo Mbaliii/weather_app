@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import axios from "axios";
 import moment from "moment";
+import './App.css';
 
 
-const Weather_App = () => {
+const WeatherApp = () => {
     const [city, setCity] = useState('');
     const [weatherData, setWeatherData] = useState(null);
     const [history, setHistory] = useState([]);
@@ -35,7 +36,7 @@ const Weather_App = () => {
         <section>
             <form onSubmit={handleSubmit}>
                 <input type="text" value={city} onChange={handleInputChange} placeholder="Enter your city"/>
-                <button type="Enter">Get Weather</button>
+                <button className="cover-button" type="Enter">Get Weather</button>
             </form>
 
             {weatherData &&  (
@@ -57,4 +58,4 @@ const Weather_App = () => {
     )
 };
 
-export default Weather_App;
+export default WeatherApp;
