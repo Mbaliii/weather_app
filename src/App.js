@@ -6,7 +6,7 @@ import WeatherApp from './weather';
 const App = () => {
   return (
     <div>
-      <h3>Weather Forecast</h3>
+     
       <WeatherApp/>
     </div>
   )

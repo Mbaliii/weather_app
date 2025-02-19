@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-head{
+
+section{
+  background-image: url('./images/pexels-joker-47-806258164-30716164.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+}
+.head{
   text-align: center;
+  margin: 20px 0;
+  color: white;
   
+}
+
+.bar{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
 }
 body{
   font-family: 'Ariel', sans-serif;

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import moment from "moment";
 import './App.css';
@@ -16,7 +16,7 @@ const WeatherApp = () => {
             );
             setWeatherData(response.data);
             setHistory(prevHistory => [...prevHistory, city]);
-            
+
         } catch (error) {
             console.log(error);
         }
@@ -34,12 +34,13 @@ const WeatherApp = () => {
 
     return (
         <section>
+            <h3 className="head">Weather Forecast</h3>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={city} onChange={handleInputChange} placeholder="Enter your city"/>
+                <input type="text" value={city} onChange={handleInputChange} placeholder="Enter your city" />
                 <button className="cover-button" type="Enter">Get Weather</button>
             </form>
 
-            {weatherData &&  (
+            {weatherData && (
                 <div>
                     <h2>{weatherData.name}</h2>
                     <p>{moment().format('dddd')}, {moment().format('LL')}</p>
@@ -48,9 +49,9 @@ const WeatherApp = () => {
                 </div>
             )}
 
-            <h3>Search History</h3>
+            <h3 className="bar">Search History</h3>
             <ul>
-                {history.map((item, index) =>(
+                {history.map((item, index) => (
                     <li key={index}>{item}</li>
                 ))}
             </ul>
