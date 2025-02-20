@@ -40,16 +40,16 @@ const WeatherApp = () => {
     };
 
     return (
-        <section>
+        <section >
             <h3 className="head">Weather Forecast</h3>
-            <forrm onSubmit={handleSubmit}>
-                <input type="text" value={city} onChange={handleInputChange} placeholder="Enter your city"/>
+            <form onSubmit={handleSubmit} className="form-container">
+                <input type="text" value={city} onChange={handleInputChange} placeholder="Enter your city" className="input-field"/>
                 <button className="cover-button" type="submit">Get Weather</button>
-            </forrm>
+            </form>
 
             <div className="city-buttons">
                 {["Johannesburg", "Pretoria", "Cape-Town", "Durban", "Nelspruit", "Taung", "Maseru","Venda", "Free-State"].map((cityName) => (
-                    <button key={cityName} onClick={() => fetchData(cityName)} className="city-button">{cityName}</button>
+                    <button key={cityName} onClick={() => fetchData(cityName)} className="city-button">{cityName} </button>
                 ))}
             </div>
 
@@ -65,7 +65,7 @@ const WeatherApp = () => {
                 </div>
             )}
 
-            <h3 className="bar">Search History</h3>
+            {/* <h3 className="bar">Search History</h3> */}
             <ul>
                 {history.map((item, index) => (
                     <li key={index}>{item}</li>
